@@ -35,7 +35,7 @@ const Footer = () => {
               {t('Әлеуметтік желілер', 'Социальные сети')}
             </h4>
             <div className="flex gap-6">
-              <a href="https://instagram.com/astanastyle" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Instagram
               </a>
               <a href="https://t.me/astanastyle" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors">
