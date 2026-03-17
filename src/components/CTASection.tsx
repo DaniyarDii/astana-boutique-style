@@ -19,7 +19,7 @@ const CTASection = ({ onCheckout }: { onCheckout: () => void }) => {
             WhatsApp
           </a>
           <a
-            href="https://t.me/astanastyle"
+            href="https://t.me/DaniyarDii"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center border border-background text-background px-8 py-4 font-body text-xs tracking-widest uppercase hover:bg-background/10 transition-colors"

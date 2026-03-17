@@ -37,7 +37,7 @@ const CheckoutModal = ({ open, onClose }: { open: boolean; onClose: () => void }
     const text = encodeURIComponent(
       `${t('Тапсырыс', 'Заказ')}:\n${t('Аты', 'Имя')}: ${name}\n${t('Телефон', 'Телефон')}: ${phone}\n${t('Тауарлар', 'Товары')}: ${orderSummary}\n${t('Сома', 'Сумма')}: ${totalPrice.toLocaleString()} ₸\n${t('Пікір', 'Комментарий')}: ${comment}`
     );
-    window.open(`https://t.me/astanastyle?text=${text}`, '_blank');
+    window.open(`https://t.me/DaniyarDii?text=${text}`, '_blank');
     clearCart();
     onClose();
     setSubmitted(false);

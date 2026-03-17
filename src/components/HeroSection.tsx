@@ -42,7 +42,7 @@ const HeroSection = () => {
             Telegram
           </a>
           <a
-            href="https://instagram.com/astanastyle"
+            href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 border border-primary-foreground text-primary-foreground px-8 py-4 font-body text-xs tracking-widest uppercase hover:bg-primary-foreground/10 transition-colors"
