@@ -1,6 +1,6 @@
-import { useLanguage } from '@/contexts/LanguageContext';
-import { MessageCircle, Send } from 'lucide-react';
-import heroBg from '@/assets/hero-bg.jpg';
+import { useLanguage } from "@/contexts/LanguageContext";
+import { MessageCircle, Send } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
   const { t } = useLanguage();
@@ -14,13 +14,10 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-medium text-primary-foreground mb-6 animate-fade-in-up">
-          {t('Астанадағы стильді киімдер', 'Стильная одежда в Астане')}
+          {t("Астанада стильді киімдер", "Стильная одежда в Астане")}
         </h1>
         <p className="font-body text-sm md:text-base tracking-widest uppercase text-primary-foreground/80 mb-12 animate-fade-in-up animate-delay-200">
-          {t(
-            'Заманауи үлгілер. Сапа. Жылдам жеткізу',
-            'Трендовые модели. Качество. Быстрая доставка'
-          )}
+          {t("Заманауи үлгілер. Сапа. Жылдам жеткізу", "Трендовые модели. Качество. Быстрая доставка")}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animate-delay-300">
           <a
