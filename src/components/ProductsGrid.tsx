@@ -59,12 +59,12 @@ const ProductsGrid = ({ onProductClick }: { onProductClick: (product: Product) =
   const { t } = useLanguage();
 
   return (
-    <section id="products" className="py-20 md:py-28">
+    <section id="products" className="py-20 md:py-28 px-6 md:px-12">
       <div className="container">
         <h2 className="font-display text-3xl md:text-4xl text-center mb-16">
           {t('Тауарлар', 'Товары')}
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-8 md:gap-x-6 md:gap-y-8">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-5 md:gap-y-8">
           {products.map(product => (
             <ProductCard
               key={product.id}
