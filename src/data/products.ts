@@ -4,6 +4,8 @@ import product3 from '@/assets/product-3.jpg';
 import product4 from '@/assets/product-4.jpg';
 import product5 from '@/assets/product-5.jpg';
 import product6 from '@/assets/product-6.jpg';
+import product7 from '@/assets/product-7.jpg';
+import product8 from '@/assets/product-8.jpg';
 
 export interface Product {
   id: string;
@@ -76,5 +78,25 @@ export const products: Product[] = [
     descriptionRu: 'Элегантное чёрное миди-платье. Идеально для особых случаев и повседневной жизни.',
     image: product6,
     category: 'bestseller',
+  },
+  {
+    id: '7',
+    nameKz: 'Бежевый тренчкот',
+    nameRu: 'Бежевый тренчкот',
+    price: 79900,
+    descriptionKz: 'Классикалық бежевый тренчкот. Күзгі маусымға тамаша таңдау, әмбебап стиль.',
+    descriptionRu: 'Классический бежевый тренчкот. Отличный выбор для осеннего сезона, универсальный стиль.',
+    image: product7,
+    category: 'new',
+  },
+  {
+    id: '8',
+    nameKz: 'Көк пиджак',
+    nameRu: 'Синий пиджак',
+    price: 69900,
+    descriptionKz: 'Ерлерге арналған көк пиджак. Іскерлік стильге тамаша, жоғары сапалы мата.',
+    descriptionRu: 'Синий пиджак для мужчин. Идеален для делового стиля, высококачественная ткань.',
+    image: product8,
+    category: 'men',
   },
 ];
