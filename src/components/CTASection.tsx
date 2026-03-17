@@ -11,7 +11,7 @@ const CTASection = ({ onCheckout }: { onCheckout: () => void }) => {
         </h2>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://wa.me/77001234567"
+            href="https://wa.me/77023817322"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-background text-foreground px-8 py-4 font-body text-xs tracking-widest uppercase hover:bg-background/90 transition-colors"
@@ -19,7 +19,7 @@ const CTASection = ({ onCheckout }: { onCheckout: () => void }) => {
             WhatsApp
           </a>
           <a
-            href="https://t.me/astanastyle"
+            href="https://t.me/DaniyarDii"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center border border-background text-background px-8 py-4 font-body text-xs tracking-widest uppercase hover:bg-background/10 transition-colors"
