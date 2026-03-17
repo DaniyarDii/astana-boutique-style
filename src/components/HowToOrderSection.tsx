@@ -18,7 +18,7 @@ const HowToOrderSection = () => {
         <div className="grid md:grid-cols-3 gap-12">
           {steps.map((step, i) => (
             <div key={i} className="text-center">
-              <span className="font-display text-5xl md:text-6xl text-border block mb-4">
+              <span className="font-display text-5xl md:text-6xl text-muted-foreground/40 block mb-4">
                 {step.num}
               </span>
               <p className="font-body text-sm tracking-widest uppercase">
