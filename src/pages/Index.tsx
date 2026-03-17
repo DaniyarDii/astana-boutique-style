@@ -1,16 +1,64 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from 'react';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import CategoriesSection from '@/components/CategoriesSection';
+import ProductsGrid from '@/components/ProductsGrid';
+import ProductModal from '@/components/ProductModal';
+import BenefitsSection from '@/components/BenefitsSection';
+import HowToOrderSection from '@/components/HowToOrderSection';
+import MapSection from '@/components/MapSection';
+import ReviewsSection from '@/components/ReviewsSection';
+import CTASection from '@/components/CTASection';
+import Footer from '@/components/Footer';
+import CartDrawer from '@/components/CartDrawer';
+import CheckoutModal from '@/components/CheckoutModal';
+import FloatingCart from '@/components/FloatingCart';
+import { Product } from '@/data/products';
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  const [cartOpen, setCartOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [checkoutOpen, setCheckoutOpen] = useState(false);
+
+  const handleCheckout = () => {
+    setCartOpen(false);
+    setCheckoutOpen(true);
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen">
+      <Header onCartOpen={() => setCartOpen(true)} />
+      <HeroSection />
+      <CategoriesSection />
+      <ProductsGrid onProductClick={setSelectedProduct} />
+      <BenefitsSection />
+      <HowToOrderSection />
+      <MapSection />
+      <ReviewsSection />
+      <CTASection onCheckout={handleCheckout} />
+      <Footer />
+
+      <FloatingCart onClick={() => setCartOpen(true)} />
+
+      <CartDrawer
+        open={cartOpen}
+        onClose={() => setCartOpen(false)}
+        onCheckout={handleCheckout}
+      />
+
+      {selectedProduct && (
+        <ProductModal
+          product={selectedProduct}
+          onClose={() => setSelectedProduct(null)}
+        />
+      )}
+
+      <CheckoutModal
+        open={checkoutOpen}
+        onClose={() => setCheckoutOpen(false)}
+      />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
