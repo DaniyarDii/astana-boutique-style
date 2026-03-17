@@ -27,7 +27,7 @@ const CheckoutModal = ({ open, onClose }: { open: boolean; onClose: () => void }
     const text = encodeURIComponent(
       `${t('Тапсырыс', 'Заказ')}:\n${t('Аты', 'Имя')}: ${name}\n${t('Телефон', 'Телефон')}: ${phone}\n${t('Тауарлар', 'Товары')}: ${orderSummary}\n${t('Сома', 'Сумма')}: ${totalPrice.toLocaleString()} ₸\n${t('Пікір', 'Комментарий')}: ${comment}`
     );
-    window.open(`https://wa.me/77001234567?text=${text}`, '_blank');
+    window.open(`https://wa.me/77023817322?text=${text}`, '_blank');
     clearCart();
     onClose();
     setSubmitted(false);
