@@ -4,8 +4,9 @@ import path from "path";
 
 let taggerPlugin: any = null;
 try {
-  const { componentTagger } = await import("lovable-tagger");
-  taggerPlugin = componentTagger;
+  // @ts-ignore
+  const mod = await import("lovable-tagger");
+  taggerPlugin = mod.componentTagger;
 } catch {}
 
 // https://vitejs.dev/config/
